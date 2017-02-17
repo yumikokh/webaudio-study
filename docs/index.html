@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- meta-->
+    <title>WebAudio-study</title>
+    <meta name="description" content="WebAudio-study page.">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- smartphone meta-->
+    <meta name="viewport" content="width=600, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <!-- ogp-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WebAudio-study">
+    <meta property="og:site_name" content="WebAudio-study">
+    <meta property="og:description" content="WebAudio-study page.">
+    <meta property="og:locale" content="ja_JP">
+    <!-- twitter card-->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="WebAudio-study">
+    <meta property="twitter:description" content="WebAudio-study page.">
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="css/style.css?v=1">
+  </head>
+  <body>
+    <div class="wrapper">
+      <section>
+        <ul class="controller">
+          <li>
+            <button class="playBtn js-playBtn">PLAY</button>
+          </li>
+          <li>
+            <input class="mute js-mute" type="checkbox">MUTE
+          </li>
+        </ul>
+        <ul class="equalizerList js-equalizerList">
+          <li>
+            <input type="radio" name="equalizerType" value="lowpass" checked="checked">lowpass
+          </li>
+          <li>
+            <input type="radio" name="equalizerType" value="highpass">highpass
+          </li>
+          <li>
+            <input type="radio" name="equalizerType" value="bandpass">bandpass
+          </li>
+        </ul>
+        <div class="simpleEqualizer js-simpleEqualizer">
+          <div class="targetCircle js-targetCircle"></div>
+        </div>
+      </section>
+    </div>
+    <!-- javascript-->
+    <script src="js/script.js?v=1"></script>
+  </body>
+</html>

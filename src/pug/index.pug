@@ -1,0 +1,33 @@
+extends /layout/_DefaultLayout
+
+prepend ConfigBlock
+  - page_name = ''
+
+append StylesheetBlock
+  link(rel="stylesheet", href="css/style.css?v="+versions["style.css"])
+
+append JavascriptBlock
+  script(src="js/script.js?v="+versions["script.js"])
+
+block ContentBlock
+  section
+    ul.controller
+      li: button.playBtn.js-playBtn PLAY
+      li
+        input(type="checkbox").mute.js-mute
+        |MUTE
+
+    ul.equalizerList.js-equalizerList
+      li
+        input(type="radio" name="equalizerType" value="lowpass" checked="checked")
+        |lowpass
+      li
+        input(type="radio" name="equalizerType" value="highpass")
+        |highpass
+      li
+        input(type="radio" name="equalizerType" value="bandpass")
+        |bandpass
+
+    .simpleEqualizer.js-simpleEqualizer
+      .targetCircle.js-targetCircle
+

@@ -1,0 +1,52 @@
+.controller {
+    text-align: center;
+    > li {
+        margin-bottom: 20px;
+    }
+}
+
+.playBtn {
+    position: relative;
+    width: 280px;
+    height: 50px;
+    line-height: 1;
+    font-size: 1.1em;
+    border: none;
+    background: #ccff72;
+    color: #4e7509;
+    transition: background .1s;
+    cursor: pointer;
+    &.noSelect {
+        pointer-events: none;
+        background: #333;
+        color: #fff;
+    }
+}
+
+.equalizerList {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.simpleEqualizer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: url(../images/graphbg.png) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.targetCircle {
+    pointer-events: none;
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: rgb(255, 252, 0);
+    border-radius: 20px;
+    transform: translate(-10px, -10px);
+    left: 50%;
+    top: 50%;
+}
